@@ -42,18 +42,17 @@
 - viewDidLoad()는 ViewController가 생성되고 나서 단 1번만 호출
 - viewWillAppear와 viewDidAppear는 화면이 다시 나타날 때마다 반복 호출
 - SecondViewController는 popViewController()로 되돌아오면 메모리에서 제거됨 (deinit 호출됨)
-    반면, FirstViewController는 네비게이션 스택에 계속 유지되므로 deinit이 호출되지 않음  
+    반면, FirstViewController는 네비게이션 스택에 계속 유지되므로 deinit이 호출되지 않음
 
-###❓ 궁금했던 점 정리 및 해석
+### ❓ 궁금했던 점 정리 및 해석
 1. [FirstVC] viewDidAppear가 왜 다시 호출되었는가?
-viewDidDisappear 후 다시 화면으로 돌아오면, 그 ViewController는 여전히 메모리에 존재하고 있기 때문에
-→ 다시 보여질 때 viewWillAppear → viewDidAppear 순서로 재호출됩니다.
-✅ 정상적인 동작입니다.
+    viewDidDisappear 후 다시 화면으로 돌아오면, 그 ViewController는 여전히 메모리에 존재하고 있기 때문에 다시 보여질 때 viewWillAppear → viewDidAppear 순서로 재호출됩니다.
+    (✅ 정상적인 동작입니다.)
 
-2. FirstViewController는 왜 deinit되지 않았는가?
-FirstVC는 여전히 navigationController의 루트로 남아 있음
-따라서 strong reference가 유지되고 있어 deinit이 호출되지 않음
-✅ 반대로 SecondVC는 pop되면 스택에서 제거되고 참조도 없어져서 deinit이 호출됩니다.
+3. FirstViewController는 왜 deinit되지 않았는가?
+    FirstVC는 여전히 navigationController의 루트로 남아 있음.
+    따라서 strong reference가 유지되고 있어 deinit이 호출되지 않음.
+    (✅ 반대로 SecondVC는 pop되면 스택에서 제거되고 참조도 없어져서 deinit이 호출됩니다.)
 
 ## ✍️ 결론
 - viewDidLoad는 초기 설정을 위한 곳이며, 이후 화면 재등장에는 호출되지 않는다.
