@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E226ABAD2DDC4623004F3154 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E226ABAC2DDC461B004F3154 /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		E22F005B2DDB209900864CA3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E226ABAC2DDC461B004F3154 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E22F00442DDB209700864CA3 /* ViewLifeCycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewLifeCycle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E22F005A2DDB209900864CA3 /* ViewLifeCycleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewLifeCycleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E22F00642DDB209900864CA3 /* ViewLifeCycleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewLifeCycleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +93,7 @@
 		E22F003B2DDB209700864CA3 = {
 			isa = PBXGroup;
 			children = (
+				E226ABAC2DDC461B004F3154 /* README.md */,
 				E22F00462DDB209700864CA3 /* ViewLifeCycle */,
 				E22F005D2DDB209900864CA3 /* ViewLifeCycleTests */,
 				E22F00672DDB209900864CA3 /* ViewLifeCycleUITests */,
@@ -225,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E226ABAD2DDC4623004F3154 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +298,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZE232G8NYV;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ViewLifeCycle/Info.plist;
+				INFOPLIST_FILE = ViewLifeCycle/App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ViewLifeCycle;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +327,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZE232G8NYV;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ViewLifeCycle/Info.plist;
+				INFOPLIST_FILE = ViewLifeCycle/App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ViewLifeCycle;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
