@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CF0376A42DEF2A4E00E34EC8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CF0376A32DEF2A4700E34EC8 /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		CF0376772DEF1F2400E34EC8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		CF03765D2DEF1F2300E34EC8 /* CaptureCycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaptureCycle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF0376762DEF1F2400E34EC8 /* CaptureCycleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaptureCycleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF0376802DEF1F2400E34EC8 /* CaptureCycleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaptureCycleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF0376A32DEF2A4700E34EC8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -78,6 +83,7 @@
 		CF0376542DEF1F2300E34EC8 = {
 			isa = PBXGroup;
 			children = (
+				CF0376A32DEF2A4700E34EC8 /* README.md */,
 				CF03765F2DEF1F2300E34EC8 /* CaptureCycle */,
 				CF03765E2DEF1F2300E34EC8 /* Products */,
 			);
@@ -207,6 +213,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF0376A42DEF2A4E00E34EC8 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
